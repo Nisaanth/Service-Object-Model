@@ -140,5 +140,25 @@ describe Postcodesio do
       expect(@single_postcode_service.retrieve_codes_nuts).to be_kind_of(String) | be(nil)
     end
 
+    it 'should retrieve postcode with characters no more or equal to 8' do
+      expect(@single_postcode_service.retrieve_postcode.split(" ").length).to be <= 8
+    end
+
+    it 'should retrieve postcode with atleast 5 characters long' do
+      expect(@single_postcode_service.retrieve_postcode.length).to be >= 5
+    end
+  
+    it 'should retrieve quality number between 1 and 9' do
+      expect(@single_postcode_service.retrieve_quality).to be_between(1, 9)
+    end
+
+    it 'should retrieve incode equal to 3 characters long' do
+      expect(@single_postcode_service.retrieve_incode.length).to eq 3
+    end
+
+    it 'should retrieve outcode between 2 and 4 characters long' do
+      expect(@single_postcode_service.retrieve_outcode.length).to be_between(2, 4)
+    end
+
   end
 end
