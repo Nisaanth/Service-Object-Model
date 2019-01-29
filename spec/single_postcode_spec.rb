@@ -65,7 +65,7 @@ describe Postcodesio do
     end
 
     it 'should retrieve msoa as a string' do 
-      expect(@single_postcode_service.retrieve_lsoa).to be_kind_of(String) | be(nil)
+      expect(@single_postcode_service.retrieve_msoa).to be_kind_of(String) | be(nil)
     end
 
     it 'should retrieve incode as a string' do 

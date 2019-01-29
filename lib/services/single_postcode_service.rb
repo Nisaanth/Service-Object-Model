@@ -152,6 +152,7 @@ class SinglePostcodeService
   def retrieve_codes_nuts
     retrieve_codes['nuts']
   end
+  
 
 end
 

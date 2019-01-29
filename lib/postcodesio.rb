@@ -14,7 +14,7 @@ end
 
 postcode_api = Postcodesio.new
 
-puts postcode_api.single_postcode_service.single_postcode_request('KT36HB')
+# puts postcode_api.single_postcode_service.single_postcode_request('KT36HB')
 
-# puts postcode_api.multiple_postcode_service.multiple_postcode_request(["OX49 5NU", "M32 0JG", "NE30 1DP"])
+# puts postcode_api.multiple_postcode_service.multiple_postcode_request(["KT36HB", "KT36EX"])
 
