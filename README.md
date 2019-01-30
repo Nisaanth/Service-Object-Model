@@ -1,7 +1,7 @@
 # Service-Object-Model
 
 ### Description
-We had to create 
+We were tasked with calling from and testing an API using rspec 
 
 ### Languages used
 * Ruby
